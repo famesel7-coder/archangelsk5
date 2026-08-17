@@ -1,0 +1,134 @@
+{
+  "meta": {
+    "project": "Архангельск 5",
+    "source": "3 raster references supplied by user",
+    "analyzed_at": "2026-08-17",
+    "confidence": {
+      "color": "medium-high",
+      "composition": "high",
+      "graphic_language": "high",
+      "typography_character": "medium",
+      "font_family": "unconfirmed"
+    }
+  },
+  "colors": {
+    "background_primary": {
+      "values": ["#003025", "#003225", "#002E20"],
+      "usage": "dominant 70-90% background field",
+      "status": "measured_inferred"
+    },
+    "background_deep": {
+      "values": ["#001B0D"],
+      "usage": "shadow / deepest spatial zone",
+      "status": "measured_inferred"
+    },
+    "background_secondary": {
+      "values": ["#003A2C", "#0C4032"],
+      "usage": "secondary green depth and transitions",
+      "status": "measured_inferred"
+    },
+    "accent_green": {
+      "values": ["#0BA949", "#20C15C"],
+      "usage": "pills, active elements, luminous accents",
+      "status": "measured_inferred"
+    },
+    "luminous_green": {
+      "values": ["#24C660", "#59F581"],
+      "usage": "glow / edge highlight only; avoid large flat fills",
+      "status": "inferred_range"
+    },
+    "foreground_white": {
+      "values": ["#F8F8F8", "#F0FAF4"],
+      "usage": "headlines, labels, line-art",
+      "status": "measured_inferred"
+    }
+  },
+  "color_ratio": {
+    "dark_green": "75-85%",
+    "white": "10-20%",
+    "bright_green": "3-8%"
+  },
+  "typography": {
+    "family": {
+      "value": null,
+      "status": "unconfirmed",
+      "requirements": [
+        "neo-grotesk sans-serif",
+        "strong Cyrillic",
+        "regular/light and bold/extra-bold weights",
+        "clean uppercase geometry"
+      ]
+    },
+    "eyebrow": {
+      "case": "uppercase",
+      "weight": "regular/light",
+      "color": "foreground_white",
+      "role": "secondary framing statement"
+    },
+    "hero_headline": {
+      "case": "uppercase",
+      "weight": "bold/extra-bold",
+      "color": "foreground_white",
+      "role": "primary visual anchor"
+    },
+    "pill_label": {
+      "case": "uppercase",
+      "weight": "regular/medium",
+      "color": "foreground_white"
+    }
+  },
+  "composition": {
+    "aspect_ratio": "16:9",
+    "headline_zone": "upper third",
+    "hero_zone": "lower 55-70%",
+    "perspective_vanishing_point": "near horizontal center, around mid-height or slightly below",
+    "background_symmetry": "high",
+    "foreground_symmetry": "optional; asymmetric balancing preferred",
+    "negative_space": "mandatory"
+  },
+  "graphic_language": {
+    "line_art": {
+      "stroke": "thin white technical contour",
+      "fill": "none or minimal",
+      "detail": "high",
+      "subjects": ["ships", "lighthouses", "architecture", "historical figures", "city infrastructure"]
+    },
+    "perspective_lines": {
+      "color": "accent/luminous green",
+      "behavior": "enter from side edges and converge toward a central spatial point",
+      "purpose": "depth, route, forward motion"
+    },
+    "light_arcs": {
+      "color": "luminous green over dark green",
+      "effects": ["blur", "glow", "soft hotspot"],
+      "purpose": "energy corridor / motion / spatial framing"
+    },
+    "pills": {
+      "shape": "fully rounded capsule",
+      "fill": "accent_green",
+      "text": "white uppercase",
+      "optional_icon": "simple map/location or brand symbol"
+    }
+  },
+  "brand_dna": [
+    "dark emerald spatial field",
+    "white technical line-art",
+    "green perspective rays",
+    "luminous green arcs",
+    "large uppercase white grotesk typography",
+    "local Arkhangelsk architecture and city symbols",
+    "limited three-part palette",
+    "one dominant message per slide",
+    "sense of route, depth and forward motion"
+  ],
+  "forbidden_patterns": [
+    "random bright multicolor palette",
+    "blue-purple cyberpunk",
+    "generic 3D blobs",
+    "heavy card-based corporate layouts",
+    "cartoon illustration",
+    "heavy text shadows",
+    "decorative perspective lines without spatial logic",
+    "invented font identification"
+  ]
+}
