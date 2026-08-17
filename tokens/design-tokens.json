@@ -1,7 +1,7 @@
 {
   "meta": {
     "project": "Архангельск 5",
-    "version": "2.1.0",
+    "version": "2.3.0",
     "updated_at": "2026-08-17",
     "client_context": "X5 / Пятёрочка grocery retail",
     "local_context": "Архангельск",
@@ -14,9 +14,11 @@
       "status": "programmatically_audited"
     },
     "source": [
-      "3 raster references supplied by user",
+      "3 initial raster references supplied by user",
+      "18 additional content/business raster references supplied by user: 15 Full HD and 3 ultrawide",
       "user-confirmed business context and font family",
-      "Figma reference AdV9SKrEfcjuie1NiySgRE, page 0:1, 52 Full HD frames"
+      "Figma reference AdV9SKrEfcjuie1NiySgRE, page 0:1, 52 Full HD frames",
+      "4 user-supplied approved SVG assets: Pyaterochka mark, ship Dikson, lighthouse, Peter I"
     ],
     "confidence": {
       "business_context": "confirmed",
@@ -25,52 +27,223 @@
       "composition": "high",
       "graphic_language": "high",
       "figma_layout_geometry": "high",
+      "content_reference_geometry": "high",
+      "data_visualization_language": "high",
+      "approved_asset_geometry": "confirmed",
       "font_files_and_license": "unconfirmed"
+    }
+  },
+  "reference_sets": {
+    "content_business_2026_08_17": {
+      "analysis": "references/style-reference-set-2026-08-17.md",
+      "status": "user_supplied_analyzed",
+      "full_hd": {
+        "canvas_px": [
+          1920,
+          1080
+        ],
+        "use": "direct geometry and visual grammar reference",
+        "files": [
+          {
+            "name": "2(1).png",
+            "path": "references/screens/content-business-2026-08-17/full-hd/02.png",
+            "sha256": "741011310d232695835729b085125b8a7e99306508498e2f480c3896a38b23f1"
+          },
+          {
+            "name": "3(2).png",
+            "path": "references/screens/content-business-2026-08-17/full-hd/03-lessons.png",
+            "sha256": "24436a51d22c8cad24e78f79562c975ea3d4bddfbc5d2d73c05ce2b25ac38192"
+          },
+          {
+            "name": "6(1).png",
+            "path": "references/screens/content-business-2026-08-17/full-hd/06-category-case.png",
+            "sha256": "fe039873138824892752656eb376c7147f782fc2b306bf83ec09156f341bf3fc"
+          },
+          {
+            "name": "10.2.png",
+            "path": "references/screens/content-business-2026-08-17/full-hd/10-2-market-share.png",
+            "sha256": "75d570fbbac75573c6c6ce48e95f8cb7b17fb48b9820082b635cd5e287500c05"
+          },
+          {
+            "name": "12.png",
+            "path": "references/screens/content-business-2026-08-17/full-hd/12-store-audit.png",
+            "sha256": "6d2711f746c53a8508d21d6840162cf5f97cd38027c7493d4a7b584b3418048f"
+          },
+          {
+            "name": "13.png",
+            "path": "references/screens/content-business-2026-08-17/full-hd/13-coffee.png",
+            "sha256": "e92f3606be84a27e6ab5693965beefdfb9df6b2f0c3e5b931ab818139e1db4c3"
+          },
+          {
+            "name": "14.png",
+            "path": "references/screens/content-business-2026-08-17/full-hd/14-expansion-map.png",
+            "sha256": "d7cb806974db159dbd858600461fe7df1c2eebb1e5dc4d1ded81a94d4b17b32c"
+          },
+          {
+            "name": "15.png",
+            "path": "references/screens/content-business-2026-08-17/full-hd/15-sales-dynamics.png",
+            "sha256": "9ff10c701ae5cb766313263c4602765a818124b30a6a4281e5b91b269539e20f"
+          },
+          {
+            "name": "22.png",
+            "path": "references/screens/content-business-2026-08-17/full-hd/22-berries.png",
+            "sha256": "108fa4c95e7070de3f4464e9757d61491bf65c1fa5c45f85a47e8087c39a2440"
+          },
+          {
+            "name": "2049.png",
+            "path": "references/screens/content-business-2026-08-17/full-hd/2049-store-comparison.png",
+            "sha256": "0b2a69f5bc381e9db83b8b00aeebf2720b0fdb3e7d3d09d3e7235b061243531c"
+          },
+          {
+            "name": "2050.png",
+            "path": "references/screens/content-business-2026-08-17/full-hd/2050-anti-globus.png",
+            "sha256": "4d51a5f113249a713d6f91d6424e56116be280c671be95a041afd247290e0b16"
+          },
+          {
+            "name": "2056.png",
+            "path": "references/screens/content-business-2026-08-17/full-hd/2056-production-ready-meals.png",
+            "sha256": "5cfccbd1380aa1d7e37ae3aa9f50466b48517dfb51ff7d207dbdae923425633d"
+          },
+          {
+            "name": "2064.png",
+            "path": "references/screens/content-business-2026-08-17/full-hd/2064-delivery-map.png",
+            "sha256": "569da110db0851a55438f73810d877f65e45e80a466911860ea32b0496b568c9"
+          },
+          {
+            "name": "2077.png",
+            "path": "references/screens/content-business-2026-08-17/full-hd/2077-local-win-smart.png",
+            "sha256": "988f4cb68b6089c5e785886f5cb09da6da7191513654d236f913924f3c1852b4"
+          },
+          {
+            "name": "2078.png",
+            "path": "references/screens/content-business-2026-08-17/full-hd/2078-omni-media.png",
+            "sha256": "83c0cf53fe33875dacae4bfcec07d7eb4d4ea7b3ffa804b75ec272b9b7fb3f2a"
+          }
+        ]
+      },
+      "ultrawide": {
+        "canvas_px": [
+          2048,
+          512
+        ],
+        "use": "visual grammar only; always recompose to Full HD",
+        "files": [
+          {
+            "name": "7(2).png",
+            "path": "references/screens/content-business-2026-08-17/ultrawide/07-investments.png",
+            "sha256": "bb580ac1ad501a3f3f4cbbc41e3ec679b24fee7a7ca5342cdb56aec1bde85f64"
+          },
+          {
+            "name": "11.png",
+            "path": "references/screens/content-business-2026-08-17/ultrawide/11-rto-map-trend.png",
+            "sha256": "e3f268ac78d6ebb290bb369560d06fcbfc0def4c91942e6951d6e75521465350"
+          },
+          {
+            "name": "3(3).png",
+            "path": "references/screens/content-business-2026-08-17/ultrawide/03-mp-north.png",
+            "sha256": "23177e5ae1f4aebad6dfb5eed3a999725c80c541fe21b174c495fc24434f8ae2"
+          }
+        ],
+        "forbidden": [
+          "stretch to 1920x1080",
+          "letterbox",
+          "mechanical crop"
+        ]
+      }
     }
   },
   "colors": {
     "background_primary": {
-      "values": ["#003025", "#003225", "#002E20"],
+      "values": [
+        "#003025",
+        "#003225",
+        "#002E20"
+      ],
       "usage": "dominant spatial field",
       "status": "measured_inferred"
     },
     "background_deep": {
-      "values": ["#001B0D"],
+      "values": [
+        "#001B0D"
+      ],
       "usage": "deep shadow and distant zone",
       "status": "measured_inferred"
     },
     "background_secondary": {
-      "values": ["#003A2C", "#0C4032"],
+      "values": [
+        "#003A2C",
+        "#0C4032"
+      ],
       "usage": "secondary planes and depth transitions",
       "status": "measured_inferred"
     },
     "background_content": {
-      "values": ["#03151C", "#051921"],
+      "values": [
+        "#03151C",
+        "#051921",
+        "#0A1B22"
+      ],
       "usage": "flat CONTENT / BUSINESS canvas for analytical and working slides",
-      "status": "exact_figma_observed"
+      "status": "exact_figma_and_raster_observed"
+    },
+    "analytical_plane": {
+      "values": [
+        "#122029",
+        "#12242B"
+      ],
+      "usage": "local grouping plane for metrics, evidence or conclusion; not a universal card system",
+      "status": "exact_raster_observed"
     },
     "accent_green": {
-      "values": ["#0BA949", "#20C15C"],
+      "values": [
+        "#0BA949",
+        "#20C15C"
+      ],
       "usage": "pills, route, active data and local emphasis",
       "status": "measured_inferred"
     },
     "luminous_green": {
-      "values": ["#24C660", "#59F581"],
+      "values": [
+        "#24C660",
+        "#59F581"
+      ],
       "usage": "glow, edge light and hotspot only",
       "status": "inferred_range"
     },
     "data_positive_or_highlight": {
-      "values": ["#00DD76"],
+      "values": [
+        "#00DD76"
+      ],
       "usage": "large numbers, positive dynamics and one active analytical highlight",
       "status": "exact_figma_observed"
     },
+    "data_comparator_cyan": {
+      "values": [
+        "#18BDF3"
+      ],
+      "usage": "second comparable series, complete coverage or explicitly different analytical status; never decorative",
+      "status": "exact_raster_observed"
+    },
+    "data_neutral": {
+      "values": [
+        "#828C90"
+      ],
+      "usage": "previous period, neutral comparator or secondary data",
+      "status": "exact_raster_observed"
+    },
     "data_negative": {
-      "values": ["#F03C72"],
+      "values": [
+        "#F03C72"
+      ],
       "usage": "negative values or adverse deviation only; never decorative",
       "status": "exact_figma_observed"
     },
     "foreground_white": {
-      "values": ["#FFFFFF", "#F8F8F8", "#F0FAF4"],
+      "values": [
+        "#FFFFFF",
+        "#F8F8F8",
+        "#F0FAF4"
+      ],
       "usage": "headlines, labels and technical line-art",
       "status": "measured_inferred"
     }
@@ -86,7 +259,11 @@
       "status": "user_confirmed",
       "figma_family_name": "X5 Sans",
       "figma_family_status": "exact_figma_observed",
-      "figma_styles": ["Regular", "Medium", "Bold"],
+      "figma_styles": [
+        "Regular",
+        "Medium",
+        "Bold"
+      ],
       "font_files": "unconfirmed",
       "license": "unconfirmed",
       "fallback_policy": "do not substitute silently; flag missing X5Sans and request an approved fallback"
@@ -109,6 +286,13 @@
       "role": "primary visual anchor",
       "recommended_lines": "1-3"
     },
+    "content_headline": {
+      "case": "sentence case",
+      "weight": "Bold",
+      "role": "business conclusion or precise topic statement",
+      "recommended_lines": "1-2",
+      "status": "repeated_raster_and_figma_pattern"
+    },
     "navigation_or_pill": {
       "case": "uppercase",
       "weight": "regular/medium",
@@ -130,16 +314,25 @@
         "status": "repeated_figma_pattern"
       },
       "body_or_data_label": {
-        "font_size_px_range": [18, 24],
+        "font_size_px_range": [
+          18,
+          24
+        ],
         "status": "repeated_figma_pattern"
       },
       "micro_label": {
-        "font_size_px_range": [12, 16],
+        "font_size_px_range": [
+          12,
+          16
+        ],
         "usage": "charts and dense technical labels only",
         "status": "figma_observed"
       },
       "big_number": {
-        "font_size_px_range": [60, 109],
+        "font_size_px_range": [
+          60,
+          109
+        ],
         "weight": "Medium or Bold",
         "preferred_color": "data_positive_or_highlight",
         "status": "figma_observed"
@@ -158,25 +351,68 @@
       "hero_brand": {
         "purpose": "cover, section, strategic statement and culmination",
         "background": "background_primary / background_deep",
-        "signature": ["technical line-art", "perspective geometry", "luminous arcs", "bold statement"]
+        "signature": [
+          "technical line-art",
+          "perspective geometry",
+          "luminous arcs",
+          "bold statement"
+        ]
       },
       "content_business": {
         "purpose": "analytics, categories, initiatives, results, plans and comparison",
         "background": "background_content",
-        "signature": ["X5 Sans hierarchy", "left title anchor", "white content", "single green data highlight"],
+        "signature": [
+          "X5 Sans hierarchy",
+          "left title anchor",
+          "white content",
+          "direct data labels",
+          "semantic highlights",
+          "maps, project photography or packshots when evidence needs them"
+        ],
         "perspective_required": false,
         "line_art_required": false
       }
     },
     "content_scaffold": {
-      "left_anchor_px_range": [85, 90],
-      "top_title_anchor_px_range": [80, 100],
+      "left_anchor_px_range": [
+        85,
+        90
+      ],
+      "top_title_anchor_px_range": [
+        80,
+        100
+      ],
+      "right_anchor_px": 90,
+      "bottom_anchor_px_range": [
+        60,
+        80
+      ],
       "title_alignment": "left",
       "title_font_size_px": 50,
       "title_font_style": "Bold",
+      "title_case": "sentence case",
       "grid_columns": "unconfirmed",
-      "right_and_bottom_safe_area": "unconfirmed",
-      "status": "repeated_figma_pattern"
+      "safe_area_status": "right and bottom anchors are repeated raster patterns; master layout wins",
+      "status": "repeated_figma_and_raster_pattern"
+    },
+    "ultrawide_reference_reflow": {
+      "source_canvas_px": [
+        2048,
+        512
+      ],
+      "target_canvas_px": [
+        1920,
+        1080
+      ],
+      "preserve": "semantic rhythm: statement or KPI -> evidence or map -> conclusion or chart",
+      "preferred_target_structure": "headline zone above one or two large evidence zones",
+      "fallback": "merge adjacent zones or split content across two slides before shrinking text",
+      "forbidden": [
+        "stretch",
+        "letterbox",
+        "mechanical crop"
+      ],
+      "status": "user_required"
     },
     "dark_negative_space": "mandatory",
     "headline_zone": "usually upper third",
@@ -197,6 +433,11 @@
       "detail": "high",
       "character": "architectural or engineering, never cartoon",
       "crop": "allowed beyond canvas",
+      "approved_sources_first": [
+        "assets/illustrations/ship-dikson.svg",
+        "assets/illustrations/lighthouse.svg",
+        "assets/illustrations/peter-i.svg"
+      ],
       "subjects_retail": [
         "Пятёрочка storefront",
         "customer",
@@ -225,7 +466,11 @@
     },
     "light_arcs": {
       "color": "luminous_green over dark green",
-      "effects": ["controlled blur", "soft glow", "single local hotspot"],
+      "effects": [
+        "controlled blur",
+        "soft glow",
+        "single local hotspot"
+      ],
       "purpose": "energy corridor and spatial framing"
     },
     "pills": {
@@ -239,9 +484,58 @@
       "canvas": "background_content",
       "primary_text_and_lines": "foreground_white",
       "positive_or_active": "data_positive_or_highlight",
+      "comparator": "data_comparator_cyan",
+      "neutral": "data_neutral",
       "negative": "data_negative",
       "block_title_size_px": 24,
+      "direct_labels": "preferred when collision-free",
+      "axes_and_grid": "minimum necessary",
+      "line_style": "rounded caps and markers; value labels near data points",
+      "bar_style": "rounded corners; restrained vertical transition inside one hue allowed",
+      "legend": "short and placed close to data",
+      "additional_series_colors": "allowed only for 3+ series; local to chart and semantically stable",
       "rule": "one dominant analytical conclusion; semantic color only; perspective and glow are optional"
+    },
+    "analytical_map": {
+      "active_territory": "accent_green or data_positive_or_highlight",
+      "context_territory": "tone-on-tone dark silhouette",
+      "boundaries": "thin and low contrast",
+      "markers": "one color per status; maximum two status colors unless the data demands more",
+      "companion": "one oversized KPI or short conclusion",
+      "perspective_required": false,
+      "status": "repeated_raster_pattern"
+    },
+    "photography_and_product_evidence": {
+      "preferred_sources": [
+        "real project photography",
+        "store or team photography",
+        "packshot",
+        "promo leaflet",
+        "shelf or planogram evidence"
+      ],
+      "role": "evidence, never generic decoration",
+      "collage_image_count": [
+        2,
+        4
+      ],
+      "hierarchy": "one hero image plus supporting frames",
+      "mask_radius_px_range": [
+        16,
+        24
+      ],
+      "shadow": "none or imperceptible",
+      "line_art_conversion_required": false,
+      "status": "repeated_raster_pattern_radius_inferred"
+    },
+    "analytical_container": {
+      "fill": "analytical_plane",
+      "radius_px_range": [
+        16,
+        24
+      ],
+      "border": "none or thin low-contrast stroke",
+      "usage": "local grouping only; do not build the entire deck as a card UI",
+      "status": "repeated_raster_pattern_radius_inferred"
     }
   },
   "semantic_priority": {
@@ -277,12 +571,91 @@
     "map_as_space",
     "near_empty_route",
     "business_data_scaffold",
-    "big_number_content"
+    "big_number_content",
+    "annotated_trend",
+    "map_kpi_split",
+    "evidence_collage",
+    "product_performance_sheet",
+    "kpi_evidence_action_reflow"
   ],
   "brand_assets": {
-    "x5_and_pyaterochka_logos": {
-      "policy": "use approved source assets only; never reconstruct from memory or alter proportions",
-      "status": "rules_confirmed_assets_not_supplied"
+    "pyaterochka_5_mark_white": {
+      "path": "assets/brand/pyaterochka-5-mark-white.svg",
+      "source_filename": "Group 2131329780.svg",
+      "canvas_px": [
+        57,
+        57
+      ],
+      "sha256": "1568b6ce90bd08c6a541cc5c957b07ce6513d11b1328b1f1e06c6e78fe69b091",
+      "render": "single white filled compound path; 5 with leaf inside circle",
+      "priority": "critical",
+      "status": "user_supplied_approved",
+      "required_on": [
+        "cover",
+        "section brand statement",
+        "closing when Pyaterochka is sender"
+      ],
+      "rules": [
+        "use exact SVG",
+        "preserve aspect ratio and path geometry",
+        "do not mirror, rotate, distort or reconstruct",
+        "do not recolor without an approved variant",
+        "do not repeat as a decorative pattern",
+        "avoid duplicate logo if already provided by the master layout"
+      ],
+      "minimum_size_and_safe_area": "unconfirmed; follow approved master or Figma layout"
+    },
+    "ship_dikson": {
+      "path": "assets/illustrations/ship-dikson.svg",
+      "source_filename": "Корабль.svg",
+      "canvas_px": [
+        1059,
+        836
+      ],
+      "sha256": "038f6a0940bab8ed2fff89be0b63a2131642d26447be0e2e972631ed26398c21",
+      "geometry": "585 paths; white strokes; internal #262424 fills",
+      "role": "port, scale, logistics, forward movement, horizontal hero",
+      "status": "user_supplied_approved"
+    },
+    "lighthouse": {
+      "path": "assets/illustrations/lighthouse.svg",
+      "source_filename": "Маяк.svg",
+      "canvas_px": [
+        178,
+        797
+      ],
+      "sha256": "85c300917247676f56fe5f91e08bf84145a1c3f19c724dd3ccad816381b13caf",
+      "geometry": "106 paths; white strokes",
+      "role": "navigation, goal, orientation, vertical axis",
+      "status": "user_supplied_approved"
+    },
+    "peter_i": {
+      "path": "assets/illustrations/peter-i.svg",
+      "source_filename": "Петр I.svg",
+      "canvas_px": [
+        437,
+        848
+      ],
+      "sha256": "1460dfb693f1e2bddc5e71cacb818ac74c04797e76d51ad7aac36aefb7425f29",
+      "geometry": "single compound path; white stroke",
+      "role": "history, leadership, action, human vertical hero",
+      "status": "user_supplied_approved"
+    },
+    "approved_asset_transform_policy": {
+      "allowed": [
+        "proportional scale",
+        "translation",
+        "crop through frame or mask",
+        "layering"
+      ],
+      "forbidden": [
+        "distortion",
+        "mirroring",
+        "path simplification",
+        "AI-generated replacement",
+        "unapproved recolor"
+      ],
+      "embedded_content": "none: no image, text or script elements in supplied SVGs"
     }
   },
   "brand_dna": [
@@ -292,6 +665,8 @@
     "luminous green arcs",
     "large X5 Sans typography with confirmed Regular, Medium and Bold styles",
     "flat dark business canvas for analytical slides",
+    "direct-labelled charts with semantic green, cyan, neutral and negative series",
+    "flat analytical maps and real project evidence photography",
     "grocery retail subject connected to X5 or Пятёрочка",
     "Arkhangelsk architecture and navigation context",
     "limited three-part palette",
@@ -311,6 +686,12 @@
     "city postcard visuals that displace the business message",
     "random grocery still life without a semantic role",
     "silent font substitution",
-    "reconstructed or distorted brand logos"
+    "reconstructed or distorted brand logos",
+    "AI-generated or lookalike replacement for an approved core asset",
+    "mirrored or recolored approved core asset without explicit approval",
+    "non-semantic cyan, magenta, amber, red or violet decoration",
+    "universal KPI card grid used across the deck",
+    "photo collage without an evidence role",
+    "stretching, letterboxing or mechanically cropping a 2048x512 reference into Full HD"
   ]
 }
