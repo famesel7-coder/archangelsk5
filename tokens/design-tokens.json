@@ -1,13 +1,22 @@
 {
   "meta": {
     "project": "Архангельск 5",
-    "version": "2.0.0",
+    "version": "2.1.0",
     "updated_at": "2026-08-17",
     "client_context": "X5 / Пятёрочка grocery retail",
     "local_context": "Архангельск",
+    "layout_reference": {
+      "name": "ТС5 в Архангельске 2026 август",
+      "url": "https://www.figma.com/design/AdV9SKrEfcjuie1NiySgRE/ТС5-в-Архангельске-2026-август?node-id=0-1",
+      "file_key": "AdV9SKrEfcjuie1NiySgRE",
+      "page_id": "0:1",
+      "full_hd_frame_count": 52,
+      "status": "programmatically_audited"
+    },
     "source": [
       "3 raster references supplied by user",
-      "user-confirmed business context and font family"
+      "user-confirmed business context and font family",
+      "Figma reference AdV9SKrEfcjuie1NiySgRE, page 0:1, 52 Full HD frames"
     ],
     "confidence": {
       "business_context": "confirmed",
@@ -15,7 +24,8 @@
       "color": "medium-high",
       "composition": "high",
       "graphic_language": "high",
-      "font_files_and_metrics": "unconfirmed"
+      "figma_layout_geometry": "high",
+      "font_files_and_license": "unconfirmed"
     }
   },
   "colors": {
@@ -34,6 +44,11 @@
       "usage": "secondary planes and depth transitions",
       "status": "measured_inferred"
     },
+    "background_content": {
+      "values": ["#03151C", "#051921"],
+      "usage": "flat CONTENT / BUSINESS canvas for analytical and working slides",
+      "status": "exact_figma_observed"
+    },
     "accent_green": {
       "values": ["#0BA949", "#20C15C"],
       "usage": "pills, route, active data and local emphasis",
@@ -44,8 +59,18 @@
       "usage": "glow, edge light and hotspot only",
       "status": "inferred_range"
     },
+    "data_positive_or_highlight": {
+      "values": ["#00DD76"],
+      "usage": "large numbers, positive dynamics and one active analytical highlight",
+      "status": "exact_figma_observed"
+    },
+    "data_negative": {
+      "values": ["#F03C72"],
+      "usage": "negative values or adverse deviation only; never decorative",
+      "status": "exact_figma_observed"
+    },
     "foreground_white": {
-      "values": ["#F8F8F8", "#F0FAF4"],
+      "values": ["#FFFFFF", "#F8F8F8", "#F0FAF4"],
       "usage": "headlines, labels and technical line-art",
       "status": "measured_inferred"
     }
@@ -59,9 +84,19 @@
     "family": {
       "value": "X5Sans",
       "status": "user_confirmed",
+      "figma_family_name": "X5 Sans",
+      "figma_family_status": "exact_figma_observed",
+      "figma_styles": ["Regular", "Medium", "Bold"],
       "font_files": "unconfirmed",
       "license": "unconfirmed",
       "fallback_policy": "do not substitute silently; flag missing X5Sans and request an approved fallback"
+    },
+    "display_accent_family": {
+      "value": "5ka Sans Design",
+      "style": "Black",
+      "observed_text_layers": 30,
+      "status": "exact_figma_observed_role_unconfirmed",
+      "usage": "do not use automatically until its semantic role is visually confirmed"
     },
     "eyebrow": {
       "case": "uppercase",
@@ -82,6 +117,33 @@
     "supporting_text": {
       "weight": "regular",
       "role": "minimal supporting information"
+    },
+    "content_scale_1920x1080": {
+      "slide_title": {
+        "font_size_px": 50,
+        "weight": "Bold",
+        "status": "repeated_figma_pattern"
+      },
+      "chart_or_block_title": {
+        "font_size_px": 24,
+        "weight": "Regular or Medium",
+        "status": "repeated_figma_pattern"
+      },
+      "body_or_data_label": {
+        "font_size_px_range": [18, 24],
+        "status": "repeated_figma_pattern"
+      },
+      "micro_label": {
+        "font_size_px_range": [12, 16],
+        "usage": "charts and dense technical labels only",
+        "status": "figma_observed"
+      },
+      "big_number": {
+        "font_size_px_range": [60, 109],
+        "weight": "Medium or Bold",
+        "preferred_color": "data_positive_or_highlight",
+        "status": "figma_observed"
+      }
     }
   },
   "composition": {
@@ -91,6 +153,30 @@
       "aspect_ratio": "16:9",
       "target": "Full HD screen",
       "status": "user_confirmed"
+    },
+    "modes": {
+      "hero_brand": {
+        "purpose": "cover, section, strategic statement and culmination",
+        "background": "background_primary / background_deep",
+        "signature": ["technical line-art", "perspective geometry", "luminous arcs", "bold statement"]
+      },
+      "content_business": {
+        "purpose": "analytics, categories, initiatives, results, plans and comparison",
+        "background": "background_content",
+        "signature": ["X5 Sans hierarchy", "left title anchor", "white content", "single green data highlight"],
+        "perspective_required": false,
+        "line_art_required": false
+      }
+    },
+    "content_scaffold": {
+      "left_anchor_px_range": [85, 90],
+      "top_title_anchor_px_range": [80, 100],
+      "title_alignment": "left",
+      "title_font_size_px": 50,
+      "title_font_style": "Bold",
+      "grid_columns": "unconfirmed",
+      "right_and_bottom_safe_area": "unconfirmed",
+      "status": "repeated_figma_pattern"
     },
     "dark_negative_space": "mandatory",
     "headline_zone": "usually upper third",
@@ -148,6 +234,14 @@
       "text": "foreground_white uppercase",
       "role": "location, route, section or active marker",
       "usage": "accent only; do not turn the deck into UI"
+    },
+    "data_visualization": {
+      "canvas": "background_content",
+      "primary_text_and_lines": "foreground_white",
+      "positive_or_active": "data_positive_or_highlight",
+      "negative": "data_negative",
+      "block_title_size_px": 24,
+      "rule": "one dominant analytical conclusion; semantic color only; perspective and glow are optional"
     }
   },
   "semantic_priority": {
@@ -181,7 +275,9 @@
     "oversized_statement",
     "cropped_monument",
     "map_as_space",
-    "near_empty_route"
+    "near_empty_route",
+    "business_data_scaffold",
+    "big_number_content"
   ],
   "brand_assets": {
     "x5_and_pyaterochka_logos": {
@@ -194,7 +290,8 @@
     "white technical line-art",
     "green perspective geometry",
     "luminous green arcs",
-    "large uppercase X5Sans typography",
+    "large X5 Sans typography with confirmed Regular, Medium and Bold styles",
+    "flat dark business canvas for analytical slides",
     "grocery retail subject connected to X5 or Пятёрочка",
     "Arkhangelsk architecture and navigation context",
     "limited three-part palette",
@@ -210,6 +307,7 @@
     "heavy text shadows",
     "ordinary stock photos without style adaptation",
     "decorative perspective lines without spatial logic",
+    "forcing perspective, glow or line-art into every business slide",
     "city postcard visuals that displace the business message",
     "random grocery still life without a semantic role",
     "silent font substitution",
