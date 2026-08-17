@@ -1,122 +1,202 @@
 {
   "meta": {
     "project": "Архангельск 5",
-    "source": "3 raster references supplied by user",
-    "analyzed_at": "2026-08-17",
+    "version": "2.0.0",
+    "updated_at": "2026-08-17",
+    "client_context": "X5 / Пятёрочка grocery retail",
+    "local_context": "Архангельск",
+    "source": [
+      "3 raster references supplied by user",
+      "user-confirmed business context and font family"
+    ],
     "confidence": {
+      "business_context": "confirmed",
+      "font_family": "confirmed",
       "color": "medium-high",
       "composition": "high",
       "graphic_language": "high",
-      "typography_character": "medium",
-      "font_family": "unconfirmed"
+      "font_files_and_metrics": "unconfirmed"
     }
   },
   "colors": {
     "background_primary": {
       "values": ["#003025", "#003225", "#002E20"],
-      "usage": "dominant 70-90% background field",
+      "usage": "dominant spatial field",
       "status": "measured_inferred"
     },
     "background_deep": {
       "values": ["#001B0D"],
-      "usage": "shadow / deepest spatial zone",
+      "usage": "deep shadow and distant zone",
       "status": "measured_inferred"
     },
     "background_secondary": {
       "values": ["#003A2C", "#0C4032"],
-      "usage": "secondary green depth and transitions",
+      "usage": "secondary planes and depth transitions",
       "status": "measured_inferred"
     },
     "accent_green": {
       "values": ["#0BA949", "#20C15C"],
-      "usage": "pills, active elements, luminous accents",
+      "usage": "pills, route, active data and local emphasis",
       "status": "measured_inferred"
     },
     "luminous_green": {
       "values": ["#24C660", "#59F581"],
-      "usage": "glow / edge highlight only; avoid large flat fills",
+      "usage": "glow, edge light and hotspot only",
       "status": "inferred_range"
     },
     "foreground_white": {
       "values": ["#F8F8F8", "#F0FAF4"],
-      "usage": "headlines, labels, line-art",
+      "usage": "headlines, labels and technical line-art",
       "status": "measured_inferred"
     }
   },
   "color_ratio": {
     "dark_green": "75-85%",
     "white": "10-20%",
-    "bright_green": "3-8%"
+    "luminous_green": "3-8%"
   },
   "typography": {
     "family": {
-      "value": null,
-      "status": "unconfirmed",
-      "requirements": [
-        "neo-grotesk sans-serif",
-        "strong Cyrillic",
-        "regular/light and bold/extra-bold weights",
-        "clean uppercase geometry"
-      ]
+      "value": "X5Sans",
+      "status": "user_confirmed",
+      "font_files": "unconfirmed",
+      "license": "unconfirmed",
+      "fallback_policy": "do not substitute silently; flag missing X5Sans and request an approved fallback"
     },
     "eyebrow": {
       "case": "uppercase",
       "weight": "regular/light",
-      "color": "foreground_white",
       "role": "secondary framing statement"
     },
     "hero_headline": {
       "case": "uppercase",
       "weight": "bold/extra-bold",
-      "color": "foreground_white",
-      "role": "primary visual anchor"
+      "role": "primary visual anchor",
+      "recommended_lines": "1-3"
     },
-    "pill_label": {
+    "navigation_or_pill": {
       "case": "uppercase",
       "weight": "regular/medium",
-      "color": "foreground_white"
+      "role": "location, section or route marker"
+    },
+    "supporting_text": {
+      "weight": "regular",
+      "role": "minimal supporting information"
     }
   },
   "composition": {
-    "aspect_ratio": "16:9",
-    "headline_zone": "upper third",
-    "hero_zone": "lower 55-70%",
-    "perspective_vanishing_point": "near horizontal center, around mid-height or slightly below",
-    "background_symmetry": "high",
-    "foreground_symmetry": "optional; asymmetric balancing preferred",
-    "negative_space": "mandatory"
+    "canvas": {
+      "width_px": 1920,
+      "height_px": 1080,
+      "aspect_ratio": "16:9",
+      "target": "Full HD screen",
+      "status": "user_confirmed"
+    },
+    "dark_negative_space": "mandatory",
+    "headline_zone": "usually upper third",
+    "hero_zone": "usually lower 55-70%",
+    "perspective_vanishing_point": {
+      "default": "near horizontal center, around mid-height or slightly below",
+      "status": "reference_confirmed_default_not_mandatory"
+    },
+    "background_symmetry": "often high",
+    "foreground_symmetry": "optional; asymmetric balance preferred",
+    "focus_count": 1,
+    "comprehension_target": "2-3 seconds"
   },
   "graphic_language": {
     "line_art": {
-      "stroke": "thin white technical contour",
+      "stroke": "thin, even, white technical contour",
       "fill": "none or minimal",
       "detail": "high",
-      "subjects": ["ships", "lighthouses", "architecture", "historical figures", "city infrastructure"]
+      "character": "architectural or engineering, never cartoon",
+      "crop": "allowed beyond canvas",
+      "subjects_retail": [
+        "Пятёрочка storefront",
+        "customer",
+        "employee or team",
+        "basket or cart",
+        "shelf or aisle",
+        "checkout or receipt",
+        "grocery products and categories",
+        "distribution center",
+        "delivery and supply-chain infrastructure"
+      ],
+      "subjects_arkhangelsk": [
+        "ships and port",
+        "lighthouses",
+        "architecture and facades",
+        "embankment and city infrastructure",
+        "maps and routes",
+        "historical figures and local symbols"
+      ]
     },
     "perspective_lines": {
-      "color": "accent/luminous green",
-      "behavior": "enter from side edges and converge toward a central spatial point",
-      "purpose": "depth, route, forward motion"
+      "color": "accent_green or luminous_green",
+      "behavior": "enter from canvas edges and converge toward one meaningful point or directional plane",
+      "purpose": "depth, route, aisle, navigation and forward motion",
+      "decorative_only": false
     },
     "light_arcs": {
-      "color": "luminous green over dark green",
-      "effects": ["blur", "glow", "soft hotspot"],
-      "purpose": "energy corridor / motion / spatial framing"
+      "color": "luminous_green over dark green",
+      "effects": ["controlled blur", "soft glow", "single local hotspot"],
+      "purpose": "energy corridor and spatial framing"
     },
     "pills": {
       "shape": "fully rounded capsule",
       "fill": "accent_green",
-      "text": "white uppercase",
-      "optional_icon": "simple map/location or brand symbol"
+      "text": "foreground_white uppercase",
+      "role": "location, route, section or active marker",
+      "usage": "accent only; do not turn the deck into UI"
+    }
+  },
+  "semantic_priority": {
+    "rule": "X5 / Пятёрочка explains what the slide is about; Архангельск explains where it happens and gives it character",
+    "retail_first_topics": [
+      "sales",
+      "traffic",
+      "average_check",
+      "product and category",
+      "customer experience",
+      "team",
+      "store operations",
+      "logistics",
+      "growth strategy"
+    ],
+    "city_first_topics": [
+      "region",
+      "venue",
+      "city route",
+      "local identity",
+      "event opening or closing"
+    ]
+  },
+  "composition_archetypes": [
+    "store_as_portal",
+    "aisle_perspective",
+    "shelf_horizon",
+    "basket_route",
+    "supply_chain_corridor",
+    "city_retail_splice",
+    "oversized_statement",
+    "cropped_monument",
+    "map_as_space",
+    "near_empty_route"
+  ],
+  "brand_assets": {
+    "x5_and_pyaterochka_logos": {
+      "policy": "use approved source assets only; never reconstruct from memory or alter proportions",
+      "status": "rules_confirmed_assets_not_supplied"
     }
   },
   "brand_dna": [
     "dark emerald spatial field",
     "white technical line-art",
-    "green perspective rays",
+    "green perspective geometry",
     "luminous green arcs",
-    "large uppercase white grotesk typography",
-    "local Arkhangelsk architecture and city symbols",
+    "large uppercase X5Sans typography",
+    "grocery retail subject connected to X5 or Пятёрочка",
+    "Arkhangelsk architecture and navigation context",
     "limited three-part palette",
     "one dominant message per slide",
     "sense of route, depth and forward motion"
@@ -128,7 +208,11 @@
     "heavy card-based corporate layouts",
     "cartoon illustration",
     "heavy text shadows",
+    "ordinary stock photos without style adaptation",
     "decorative perspective lines without spatial logic",
-    "invented font identification"
+    "city postcard visuals that displace the business message",
+    "random grocery still life without a semantic role",
+    "silent font substitution",
+    "reconstructed or distorted brand logos"
   ]
 }
