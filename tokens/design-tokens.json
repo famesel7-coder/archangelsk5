@@ -150,6 +150,31 @@
           "mechanical crop"
         ]
       }
+    },
+    "hero_brand_initial": {
+      "analysis": "references/initial-hero-reference-set.md",
+      "status": "user_supplied_analyzed",
+      "use": "hero, spatial background and initial visual DNA reference",
+      "files": [
+        {
+          "name": "Frame 1(1).png",
+          "path": "references/screens/hero-brand-initial/frame-1.png",
+          "canvas_px": [1925, 1080],
+          "sha256": "3c0aa85653e4400103ed7492bb3a78aa4fe7acca3b6bce457b8e49d0fbac6306"
+        },
+        {
+          "name": "фон разобранный 1(1).png",
+          "path": "references/screens/hero-brand-initial/background-deconstructed.png",
+          "canvas_px": [1920, 1080],
+          "sha256": "4a2f1b906e0d98f06fb064c6da340de16a04dd91ddfcacff4240ba901209396c"
+        },
+        {
+          "name": "telegram-cloud-photo-size-2-5193062339786251412-y 1(1).png",
+          "path": "references/screens/hero-brand-initial/telegram-reference.png",
+          "canvas_px": [1280, 803],
+          "sha256": "da493537398638584892de6cf0e58b3028101c5df7865c2e8300b08811deab85"
+        }
+      ]
     }
   },
   "colors": {
