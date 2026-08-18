@@ -1,134 +1,182 @@
 {
   "meta": {
     "project": "Архангельск 5",
-    "source": "3 raster references supplied by user",
-    "analyzed_at": "2026-08-17",
+    "version": "2026-08-18-dark-photo-led",
+    "source": "latest approved slide iterations and explicit user corrections",
     "confidence": {
-      "color": "medium-high",
+      "color": "high",
       "composition": "high",
       "graphic_language": "high",
       "typography_character": "medium",
-      "font_family": "unconfirmed"
+      "font_family": "unconfirmed",
+      "grid_metrics": "production_guideline"
     }
+  },
+  "format": {
+    "width": 1920,
+    "height": 1080,
+    "aspect_ratio": "16:9"
+  },
+  "grid": {
+    "columns": 12,
+    "outer_margin_px": [80, 96],
+    "gutter_px": [24, 32],
+    "vertical_rhythm_px": [8, 16, 24, 32],
+    "status": "production_guideline"
   },
   "colors": {
     "background_primary": {
-      "values": ["#003025", "#003225", "#002E20"],
-      "usage": "dominant 70-90% background field",
-      "status": "measured_inferred"
+      "values": ["#071D23", "#062128", "#08272C", "#0A2B30"],
+      "usage": "dominant dark teal / charcoal background",
+      "status": "approved_inferred"
     },
     "background_deep": {
-      "values": ["#001B0D"],
-      "usage": "shadow / deepest spatial zone",
-      "status": "measured_inferred"
-    },
-    "background_secondary": {
-      "values": ["#003A2C", "#0C4032"],
-      "usage": "secondary green depth and transitions",
-      "status": "measured_inferred"
+      "values": ["#031419", "#04191E"],
+      "usage": "deep shadow, image fade, chart background",
+      "status": "approved_inferred"
     },
     "accent_green": {
-      "values": ["#0BA949", "#20C15C"],
-      "usage": "pills, active elements, luminous accents",
-      "status": "measured_inferred"
+      "values": ["#00B95A", "#00C867", "#12C86A"],
+      "usage": "Pyaterochka series, growth, active data, routes, nodes",
+      "status": "approved_inferred"
     },
-    "luminous_green": {
-      "values": ["#24C660", "#59F581"],
-      "usage": "glow / edge highlight only; avoid large flat fills",
-      "status": "inferred_range"
+    "accent_green_deep": {
+      "values": ["#00763F", "#005E37"],
+      "usage": "bar gradients, image treatment, secondary green depth",
+      "status": "approved_inferred"
+    },
+    "comparison_gray": {
+      "values": ["#8EA8B0", "#9AADB3", "#667D84"],
+      "usage": "market, comparison, prior period, secondary series",
+      "status": "approved_inferred"
+    },
+    "ui_gray_dark": {
+      "values": ["#263A40"],
+      "usage": "small label/pill background only",
+      "status": "approved_inferred"
     },
     "foreground_white": {
-      "values": ["#F8F8F8", "#F0FAF4"],
-      "usage": "headlines, labels, line-art",
-      "status": "measured_inferred"
+      "values": ["#F7F8F7", "#EEF2F1"],
+      "usage": "headlines, body, key values",
+      "status": "approved_inferred"
+    },
+    "negative_red": {
+      "values": ["#E94B4B", "#D94141"],
+      "usage": "negative values only; never decorative",
+      "status": "semantic_exception"
     }
   },
   "color_ratio": {
-    "dark_green": "75-85%",
-    "white": "10-20%",
-    "bright_green": "3-8%"
+    "dark_teal_charcoal": "70-80%",
+    "white": "10-15%",
+    "green": "8-12%",
+    "gray": "3-8%",
+    "red": "semantic negative only"
   },
   "typography": {
     "family": {
       "value": null,
       "status": "unconfirmed",
       "requirements": [
-        "neo-grotesk sans-serif",
+        "modern neo-grotesk sans-serif",
         "strong Cyrillic",
-        "regular/light and bold/extra-bold weights",
-        "clean uppercase geometry"
+        "regular/medium/bold/extra-bold weights",
+        "high numeric readability"
       ]
     },
-    "eyebrow": {
-      "case": "uppercase",
-      "weight": "regular/light",
-      "color": "foreground_white",
-      "role": "secondary framing statement"
-    },
-    "hero_headline": {
-      "case": "uppercase",
+    "headline": {
       "weight": "bold/extra-bold",
       "color": "foreground_white",
       "role": "primary visual anchor"
     },
-    "pill_label": {
-      "case": "uppercase",
+    "data_value": {
+      "weight": "medium/bold",
+      "colors": ["foreground_white", "accent_green", "comparison_gray"],
+      "role": "fast scan KPI"
+    },
+    "body": {
       "weight": "regular/medium",
       "color": "foreground_white"
     }
   },
-  "composition": {
-    "aspect_ratio": "16:9",
-    "headline_zone": "upper third",
-    "hero_zone": "lower 55-70%",
-    "perspective_vanishing_point": "near horizontal center, around mid-height or slightly below",
-    "background_symmetry": "high",
-    "foreground_symmetry": "optional; asymmetric balancing preferred",
-    "negative_space": "mandatory"
-  },
-  "graphic_language": {
-    "line_art": {
-      "stroke": "thin white technical contour",
-      "fill": "none or minimal",
-      "detail": "high",
-      "subjects": ["ships", "lighthouses", "architecture", "historical figures", "city infrastructure"]
-    },
-    "perspective_lines": {
-      "color": "accent/luminous green",
-      "behavior": "enter from side edges and converge toward a central spatial point",
-      "purpose": "depth, route, forward motion"
-    },
-    "light_arcs": {
-      "color": "luminous green over dark green",
-      "effects": ["blur", "glow", "soft hotspot"],
-      "purpose": "energy corridor / motion / spatial framing"
-    },
-    "pills": {
-      "shape": "fully rounded capsule",
-      "fill": "accent_green",
-      "text": "white uppercase",
-      "optional_icon": "simple map/location or brand symbol"
-    }
-  },
-  "brand_dna": [
-    "dark emerald spatial field",
-    "white technical line-art",
-    "green perspective rays",
-    "luminous green arcs",
-    "large uppercase white grotesk typography",
-    "local Arkhangelsk architecture and city symbols",
-    "limited three-part palette",
-    "one dominant message per slide",
-    "sense of route, depth and forward motion"
+  "layout_archetypes": [
+    "7/5 data + visual",
+    "8/4 chart + explanation",
+    "6/6 comparison",
+    "map hero + side column",
+    "large chart + photo strip",
+    "photo mosaic 2-3 images + data",
+    "large contextual photo + compact data",
+    "full-width data + lower visual strip"
   ],
-  "forbidden_patterns": [
-    "random bright multicolor palette",
+  "imagery": {
+    "status": "core_system_element",
+    "treatment": [
+      "realistic / native",
+      "dark teal-green grade",
+      "controlled contrast",
+      "integrated with grid",
+      "avoid obvious AI artifacts"
+    ],
+    "preferred_subjects": [
+      "Arkhangelsk and region",
+      "Pyaterochka stores",
+      "distribution centers and warehouses",
+      "trucks and remote logistics",
+      "delivery and order assembly",
+      "smartphone online order",
+      "employees and customers",
+      "fresh produce / FROV",
+      "bakery and bread",
+      "local assortment",
+      "regional maps and delivery routes",
+      "port and cargo infrastructure when content-relevant"
+    ]
+  },
+  "data_semantics": {
+    "pyaterochka": "accent_green",
+    "growth": "accent_green",
+    "market": "comparison_gray",
+    "comparison": "comparison_gray",
+    "previous_period": "comparison_gray",
+    "negative": "negative_red"
+  },
+  "cards_and_pills": {
+    "default": "avoid",
+    "allowed_for": ["short label", "region", "status", "small KPI", "single short emphasis"],
+    "rule": "do not place large rounded cards behind ordinary text"
+  },
+  "maps": {
+    "background": "dark",
+    "outline": "gray-green thin stroke",
+    "nodes": "accent_green",
+    "routes": "accent_green or comparison_gray",
+    "labels": "minimal"
+  },
+  "logo": {
+    "rule": "use official asset if available; never hallucinate or distort",
+    "vehicle_mark": "round 5 symbol without wordmark allowed when requested",
+    "fallback": "omit logo rather than generate incorrect branding"
+  },
+  "avoid_by_default": [
+    "lighthouse",
+    "north star",
+    "compass as hero symbol",
+    "aurora as universal background",
+    "generic snowy mountains disconnected from content",
+    "generic PowerPoint cards",
+    "many pills under text",
+    "same layout across all slides",
     "blue-purple cyberpunk",
-    "generic 3D blobs",
-    "heavy card-based corporate layouts",
-    "cartoon illustration",
-    "heavy text shadows",
-    "decorative perspective lines without spatial logic",
-    "invented font identification"
-  ]
+    "random neon decoration",
+    "stock imagery without treatment",
+    "AI image artifacts",
+    "invented branding"
+  ],
+  "content_rules": {
+    "ppt_text": "immutable source of truth",
+    "rewrite": false,
+    "hidden_slides": "skip",
+    "ppt_visual_style": "ignore; treat as prototype only"
+  }
 }
